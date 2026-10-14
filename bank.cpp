@@ -20,16 +20,16 @@ public:
 
     void display() {
         cout << "Account number is: " << account_no << endl;
-        cout << "Name of account holder is: " << name << endl;
-        cout << "Account balance is: " << balance << endl;
+        cout << "Name of account holder: " << name << endl;
+        cout << "Account balance : " << balance << endl;
     }
 
     static void display_count() {
-        cout << "Number of bank accounts is: " << count << endl;
+        cout << "Number of bank accounts: " << count << endl;
     }
 
     ~BankAccount() {
-        cout << "Account is destroyed." << endl;
+        cout << "Account deleted." << endl;
     }
 };
 
@@ -37,8 +37,8 @@ public:
 int BankAccount::count = 0;
 
 int main() {
-    BankAccount b1(1, "Shrawani", 10000000);
-    BankAccount b2(2, "Shravani", 5000000);
+    BankAccount b1(1, "GareebNayan", 10000);
+    BankAccount b2(2, "Avishkar", 50000);
 
     b1.display();
     b2.display();
